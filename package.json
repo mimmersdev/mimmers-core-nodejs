@@ -1,0 +1,43 @@
+{
+    "name": "mimmers-core-nodejs",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+      "dist",
+      "README.md"
+    ],
+    "scripts": {
+      "build": "tsc",
+      "prepare": "npm run build",
+      "start": "node dist/index.js",
+      "dev": "ts-node src/index.ts",
+      "dev:watch": "nodemon --exec ts-node src/index.ts",
+      "clean": "rimraf dist",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mimmersdev/pases-universitarios.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+      "url": "https://github.com/mimmersdev/pases-universitarios/issues"
+    },
+    "homepage": "https://github.com/mimmersdev/pases-universitarios#readme",
+    "description": "",
+    "devDependencies": {
+      "@types/node": "^24.9.1",
+      "nodemon": "^3.1.10",
+      "rimraf": "^6.0.1",
+      "ts-node": "^10.9.2",
+      "typescript": "^5.9.3"
+    },
+    "dependencies": {
+      "zod": "^4.1.12"
+    }
+  }
+  
